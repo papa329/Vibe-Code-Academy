@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe Code Academy - Aprann Kòd pou Kominote Ayisyen</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">VCA</span>
+                <span class="logo-text">Vibe Code Academy</span>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="#akèy" class="nav-link">Akèy</a>
+                <a href="#sou-nou" class="nav-link">Sou Nou</a>
+                <div class="dropdown">
+                    <button class="nav-link dropdown-btn" id="formation-btn">
+                        Fòmasyon <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="formation-dropdown">
+                        <a href="#html-course" class="dropdown-item">HTML Fondasyon</a>
+                        <a href="#css-course" class="dropdown-item">CSS Stil ak Design</a>
+                        <a href="#js-course" class="dropdown-item">JavaScript Dinamik</a>
+                    </div>
+                </div>
+                <a href="#konekte" class="nav-link">Konekte</a>
+                <a href="#enskri" class="btn btn-primary">Enskri Kounye a</a>
+            </div>
+            
+            <button class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="akèy">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Vibe Code Academy</h1>
+                <h2 class="hero-subtitle">Fòme Pwogramè Ayisyen pou Demen</h2>
+                <p class="hero-description">
+                    VCA se yon platfòm E-learning ki dedye a bay kominote Ayisyen an 
+                    aksè a fòmasyon kalite nan domèn devlopman web. Nou kwè ke tout 
+                    moun merite opòtinite pou aprann teknoloji.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#fòmasyon" class="btn btn-primary btn-large">
+                        Wè Fòmasyon Yo <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#sou-nou" class="btn btn-secondary btn-large">
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="code-symbol">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="sou-nou">
+        <div class="container">
+            <h2 class="section-title">Objektif VCA</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Misyon Nou</h3>
+                    <p>Diminye baryè ant jèn Ayisyen ak konesans teknoloji atravè fòmasyon abòdab ak aksesib.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Vizyon Nou</h3>
+                    <p>Kreye yon kominote 10,000 devlopè web Ayisyen ki konpetan ak konfòme nan 5 an.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Valè Nou</h3>
+                    <p>Aksesibilite, Kominote, Ekselans, Pèsistans, ak Solidarite.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses" id="fòmasyon">
+        <div class="container">
+            <h2 class="section-title">Fòmasyon Nou Yo</h2>
+            <p class="section-subtitle">Pou jis <strong>5,000 Gdes</strong> ou jwenn aksè a tout 3 fòmasyon yo konplètman!</p>
+            
+            <div class="courses-grid">
+                <!-- HTML Course -->
+                <div class="course-card" id="html-course">
+                    <div class="course-header">
+                        <div class="course-icon html-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h3 class="course-title">HTML Fondasyon</h3>
+                    </div>
+                    <div class="course-content">
+                        <p class="course-description">
+                            Aprann kreye estrikti fondamantal yon sit web ak HTML. 
+                            Ou pral konnen kijan pou kreye paj, fòm, tab, ak plis ankò.
+                        </p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> 15 Leson Konplè</li>
+                            <li><i class="fas fa-check"></i> 10 Pwojè Pratik</li>
+                            <li><i class="fas fa-check"></i> Sertifikasyon</li>
+                            <li><i class="fas fa-check"></i> Sipò Kominote</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <span class="course-price">Enkli nan Pakè</span>
+                        <button class="btn btn-outline" onclick="showDetails('html')">
+                            Plis Detay
+                        </button>
+                    </div>
+                </div>
+
+                <!-- CSS Course -->
+                <div class="course-card" id="css-course">
+                    <div class="course-header">
+                        <div class="course-icon css-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <h3 class="course-title">CSS Stil ak Design</h3>
+                    </div>
+                    <div class="course-content">
+                        <p class="course-description">
+                            Bay sit w entèfas bèl ak responsive. Aprann Flexbox, Grid, 
+                            animasyon, ak konsep design modèn.
+                        </p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> 20 Leson Avanse</li>
+                            <li><i class="fas fa-check"></i> 15 Efè Vizyèl</li>
+                            <li><i class="fas fa-check"></i> Design Responsive</li>
+                            <li><i class="fas fa-check"></i> FrameWorks CSS</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <span class="course-price">Enkli nan Pakè</span>
+                        <button class="btn btn-outline" onclick="showDetails('css')">
+                            Plis Detay
+                        </button>
+                    </div>
+                </div>
+
+                <!-- JavaScript Course -->
+                <div class="course-card" id="js-course">
+                    <div class="course-header">
+                        <div class="course-icon js-icon">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <h3 class="course-title">JavaScript Dinamik</h3>
+                    </div>
+                    <div class="course-content">
+                        <p class="course-description">
+                            Rann sit w vivan! Aprann JavaScript pou kreye entèraksyon, 
+                            jere done, ak devlope aplikasyon web.
+                        </p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> 25 Leson Komplete</li>
+                            <li><i class="fas fa-check"></i> 5 Pwojè Reèl</li>
+                            <li><i class="fas fa-check"></i> API ak Fetch</li>
+                            <li><i class="fas fa-check"></i> FrameWorks JS</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <span class="course-price">Enkli nan Pakè</span>
+                        <button class="btn btn-outline" onclick="showDetails('js')">
+                            Plis Detay
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Package Offer -->
+            <div class="package-banner">
+                <div class="package-content">
+                    <h3>🎉 Ofri Espesyal! 🎉</h3>
+                    <p>Jwenn <strong>Tout 3 Fòmasyon yo</strong> pou yon sèl pri: <strong>5,000 Gdes</strong></p>
+                    <p>Ekonomize plis pase 60%! Aksè pou tout lavi ak tout mizajou.</p>
+                </div>
+                <button class="btn btn-primary btn-large" onclick="showRegistration()">
+                    Enskri Kounye a - 5,000 Gdes
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Modal -->
+    <div class="modal" id="registration-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2>Kreye Kont Ou</h2>
+            <form id="registration-form">
+                <div class="form-group">
+                    <label for="name">Non Konplè</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Imèl</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Nimewo Telefòn</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Modpas</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Konfime Modpas</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <div class="form-group">
+                    <p class="payment-info">
+                        <i class="fas fa-info-circle"></i>
+                        Apre enskripsyon, ou pral resevwa yon mesaj ak enfòmasyon pou peye 5,000 Gdes 
+                        pou aksè a tout fòmasyon yo.
+                    </p>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                    Kreye Kont
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Vibe Code Academy</h3>
+                    <p>Fòme pwogramè pou Ayiti ak tout kominote ayisyen atravè lemonn.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontakte Nou</h3>
+                    <p><i class="fas fa-envelope"></i> info@vibecodeacademy.ht</p>
+                    <p><i class="fas fa-phone"></i> +509 34 00 0000</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Siviv Nou</h3>
+                    <a href="#">Kondisyon Itilizasyon</a>
+                    <a href="#">Règleman sou Konfidansyalite</a>
+                    <a href="#">Sipò Teknik</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vibe Code Academy. Tout dwa rezève. Fèt ak ♥ pou Ayiti.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
